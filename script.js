@@ -58,8 +58,11 @@ const renderCalendar = () => {
       date.getMonth() === new Date().getMonth()
     ) {
       days += `<div class="today">${i}</div>`;
+      document.querySelector(".days").innerHTML = days
+      
     } else {
       days += `<div>${i}</div>`;
+      document.querySelector(".days").innerHTML = days      
     }
   }
 
